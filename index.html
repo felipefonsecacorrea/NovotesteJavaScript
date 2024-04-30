@@ -9,7 +9,9 @@
 <body id="total">
     <header>
         <img id="logoheader" class="logo1 logo2" src="logo1.png" alt="">
+        <img id="iconeIngles" onclick="TraduzirParaIngles()" src="./estados-unidos.png " alt="">   
         <button id="transformar" onclick="transformar()" >transformar</button>
+         
     </header>
         
     <main>
@@ -55,6 +57,8 @@
         document.getElementById("h1site").innerHTML = "Site Novo"
         document.getElementById ("h1site").style.fontWeight = "200"
 
+        document.getElementById ("iconeIngles").style.display = "flex"
+
         document.getElementById("total").style.backgroundColor = "black"
         document.querySelector("body").style.color = "white"
         document.querySelector("main").style.textTransform = "capitalize"
@@ -99,8 +103,13 @@
         document.getElementById("p2").style.backgroundColor = "transparent"
 
         document.getElementById("vlibras").style.display = "flex"
-        
        } 
+
+       function TraduzirParaIngles(){
+        document.getElementById("h1site").innerHTML = "New Website" 
+        document.getElementById("p1").innerHTML = "Santos Futebol Clube was founded on the initiative of three sportsmen from the city, Francisco Raymundo Marques, Mário Ferraz de Campos and Argemiro de Souza Júnior. They invited all interested parties to participate in the inaugural meeting of the new club, which was created to be dedicated to the practice of football, which at the beginning of the last century was in its infancy in Brazil."
+        document.getElementById("p2").innerHTML = "The historic meeting took place on Sunday afternoon, April 14, 1912, at the Concórdia Club Headquarters, on the old Rua Do Rosário, 18 (today Rua João Pessoa, 8/10). All 39 participants in this meeting are considered as founding partners. <br/>On Foundation Day, the name of the entity was suggested by Edmundo Jorge De Araújo: Santos Foot-Ball Club and the colors of the uniforms of the new association, which would be presided over in the first year of existence by Sizino Patusca, were blue and white, With Golden Threads Between Them"
+       }
     </script>
 </body>
 </html>
